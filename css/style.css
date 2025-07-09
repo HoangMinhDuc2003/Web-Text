@@ -1,27 +1,29 @@
 * {
   box-sizing: border-box; /*Tất cả phần tử sẽ tính kích thước theo chiều rộng bao gồm cả padding và border*/
 }
+html,
 body {
+  height: 100%;
   margin: 0;
   padding: 0; /*Xóa khoảng trắng mặc định của web*/
+  overflow-x: hidden; /* Ngăn tràn ngang */
+  width: 100%;
+}
+
+body {
   box-sizing: border-box;
 }
 /*Phan mo dau trang*/
 header {
   background-color: rgb(1, 140, 253);
   height: 132px;
-  width: 100%;
+  width: 100vw;
   display: flex; /*Chia phần tử con theo hàng ngang*/
   justify-content: space-between; /*Khong xuong hàng khi kéo nhỏ*/
   padding: 20px 20px; /*Tạo khoảng cách trên dưới phải trái*/
   position: relative; /*để các phần tử con (như nav-menu) có thể dùng absolute dựa theo vị trí của header.*/
 }
-/*Phan ket thuc trang*/
-footer {
-  background-color: rgb(77, 175, 255);
-  height: 151px;
-  width: 100%;
-}
+
 /*Phan logo*/
 .logo {
   display: flex;
@@ -31,13 +33,13 @@ footer {
   white-space: nowrap; /*Ngăn xuống dòng*/
   overflow: hidden; /*Nếu vượt kích thước thì sẽ ẩn*/
   gap: 10px; /*Khoảng cách giữa phần tử con*/
-  flex-shrink: 1; /*Không co lại khi thu nhỏ màn hình*/
+  flex-shrink: 1; /*Co lại khi thu nhỏ màn hình*/
   min-width: 220px; /*Giữ cho logo không nhỏ hơn 220px*/
 }
 .logo-icon {
   width: 76px;
   height: 76px;
-  flex-shrink: 0;
+  flex-shrink: 0; /*Không co lại khi thu nhỏ màn hình*/
 }
 
 .logo-text {
@@ -45,7 +47,7 @@ footer {
   font-size: 30px;
   font-weight: bold;
   font-family: "Tektur", sans-serif;
-  overflow: hidden;
+  overflow: hidden; /*Nếu vượt kích thước thì sẽ ẩn*/
   text-overflow: ellipsis; /* thêm dấu "..." nếu quá dài */
   max-width: 400px; /* chiều rộng tối đa ban đầu */
 }
@@ -118,6 +120,65 @@ footer {
   font-weight: bold;
   -webkit-text-stroke: 1px rgb(71, 71, 71);
 }
+/*Phan ket thuc trang*/
+footer {
+  background-color: rgb(77, 175, 255);
+  height: 200px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact-left h3 {
+  margin: 0 0 10px;
+  font-size: 24px;
+  color: #0d47a1;
+  font-family: "Tektur", sans-serif;
+}
+
+.contact-left p {
+  margin: 4px 0;
+  font-size: 16px;
+  color: #000000;
+  font-family: "Tektur", sans-serif;
+}
+
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+.contact-info a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  font-family: "Tektur", sans-serif;
+  transition: color 0.3s ease;
+}
+.contact-info a:hover {
+  color: #ff5252;
+}
+.contact-icons a {
+  margin-left: 10px;
+  font-size: 22px;
+  color: #0d47a1;
+  transition: color 0.3s ease;
+}
+
+.contact-icons a:hover {
+  color: #ff5252;
+}
+
 /*Phan nut bam back home*/
 #scrollTopButton {
   position: fixed;
