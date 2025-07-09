@@ -5,11 +5,13 @@ body {
   margin: 0;
   padding: 0; /*Xóa khoảng trắng mặc định của web*/
   box-sizing: border-box;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 /*Phan mo dau trang*/
 header {
   background-color: rgb(1, 140, 253);
-  height: 3.5cm;
+  height: 132px;
   width: 100%;
   display: flex; /*Chia phần tử con theo hàng ngang*/
   justify-content: space-between; /*Khong xuong hàng khi kéo nhỏ*/
