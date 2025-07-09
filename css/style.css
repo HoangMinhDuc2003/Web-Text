@@ -1,15 +1,12 @@
 * {
   box-sizing: border-box; /*Tất cả phần tử sẽ tính kích thước theo chiều rộng bao gồm cả padding và border*/
 }
-html,
-body {
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0; /*Xóa khoảng trắng mặc định của web*/
-}
+
 body {
   box-sizing: border-box;
   max-width: 100%;
+  margin: 0;
+  padding: 0; /*Xóa khoảng trắng mặc định của web*/
 }
 /*Phan mo dau trang*/
 header {
