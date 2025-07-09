@@ -37,6 +37,7 @@ footer {
 .logo-icon {
   width: 76px;
   height: 76px;
+  flex-shrink: 0;
 }
 
 .logo-text {
@@ -44,6 +45,9 @@ footer {
   font-size: 30px;
   font-weight: bold;
   font-family: "Tektur", sans-serif;
+  overflow: hidden;
+  text-overflow: ellipsis; /* thêm dấu "..." nếu quá dài */
+  max-width: 400px; /* chiều rộng tối đa ban đầu */
 }
 /*Phan menu home*/
 .nav-menu {
