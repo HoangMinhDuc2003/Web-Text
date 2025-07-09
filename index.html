@@ -25,10 +25,14 @@
         <span class="logo-text">My Health by HoangDuc</span>
       </a>
       <!-- Nút ba gạch hiện khi thu nhỏ -->
-      <div class="menu-toggle" onclick="toggleMenu()">
-        <i class="fas fa-bars"></i>
+      <div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
       </div>
+      <!--Menu trang chu-->
       <nav class="nav-menu" id="nav-menu">
+        <!--List trang chu....-->
         <ul class="nav-list">
           <li><a href="#">Trang chủ</a></li>
           <li><a href="#">Chỉ số</a></li>
@@ -36,6 +40,7 @@
           <li><a href="#">Tư vấn</a></li>
           <li><a href="#">Liên hệ</a></li>
         </ul>
+        <!--Nut dang nhap-->
         <div class="login-icon-button">
           <button onclick="window.location.href='#'">
             <i class="fas fa-user"></i>
@@ -102,8 +107,32 @@
       <p>Hàng thứ 6</p>
     </main>
     <footer>
-      <div></div>
-      <div></div>
+      <div class="contact">
+        <div class="contact-left">
+          <h3>THÔNG TIN</h3>
+          <p>Name: Hoàng Minh Đức</p>
+          <p>University: Hue University of Science</p>
+        </div>
+        <div class="contact-right">
+          <div class="contact-info">
+            <div>
+              <a href="tel:0329801850"
+                ><i class="fas fa-phone"></i> 0329801850</a
+              >
+            </div>
+            <div>
+              <a href="mailto:hoangminhduc21052003@gmail.com">
+                <i class="fas fa-envelope"></i> hoangminhduc21052003@gmail.com
+              </a>
+            </div>
+          </div>
+          <div class="contact-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fas fa-comment-dots"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
     </footer>
     <!--Nút back home-->
     <button id="scrollTopButton">
