@@ -1,17 +1,19 @@
-// 1. Toggle menu bằng class
-function toggleMenu() {
-  const menu = document.getElementById("nav-menu");
-  if (menu) {
-    menu.classList.toggle("active");
-  } else {
-    console.log("Không tìm thấy phần tử có id='nav-menu'");
-  }
-}
+document.addEventListener("DOMContentLoaded", function () {
+  // Toggle menu
+  const toggleButton = document.querySelector(".menu-toggle");
+  const navMenu = document.getElementById("nav-menu");
 
-// 2. Button về đầu trang
-document.getElementById("scrollTopButton").onclick = function () {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-};
+  if (toggleButton && navMenu) {
+    toggleButton.addEventListener("click", function () {
+      navMenu.classList.toggle("active");
+    });
+  }
+
+  // Nút cuộn lên đầu
+  const scrollBtn = document.getElementById("scrollTopButton");
+  if (scrollBtn) {
+    scrollBtn.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+});
