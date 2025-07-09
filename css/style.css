@@ -6,11 +6,9 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   margin: 0;
-  padding: 0;
+  padding: 0;/*Xóa khoảng trắng mặc định của web*/
 }
 body {
-  margin: 0;
-  padding: 0; /*Xóa khoảng trắng mặc định của web*/
   box-sizing: border-box;
   max-width: 100%;
 }
