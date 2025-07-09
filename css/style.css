@@ -19,7 +19,7 @@ header {
 /*Phan ket thuc trang*/
 footer {
   background-color: rgb(77, 175, 255);
-  height: 4cm;
+  height: 151px;
   width: 100%;
 }
 /*Phan logo*/
@@ -31,12 +31,12 @@ footer {
   white-space: nowrap; /*Ngăn xuống dòng*/
   overflow: hidden; /*Nếu vượt kích thước thì sẽ ẩn*/
   gap: 10px; /*Khoảng cách giữa phần tử con*/
-  flex-shrink: 0; /*Không co lại khi thu nhỏ màn hình*/
+  flex-shrink: 1; /*Không co lại khi thu nhỏ màn hình*/
   min-width: 220px; /*Giữ cho logo không nhỏ hơn 220px*/
 }
 .logo-icon {
-  width: 2cm;
-  height: 2cm;
+  width: 76px;
+  height: 76px;
 }
 
 .logo-text {
