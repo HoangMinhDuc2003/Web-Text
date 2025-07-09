@@ -1,12 +1,18 @@
 * {
   box-sizing: border-box; /*Tất cả phần tử sẽ tính kích thước theo chiều rộng bao gồm cả padding và border*/
 }
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
 body {
   margin: 0;
   padding: 0; /*Xóa khoảng trắng mặc định của web*/
   box-sizing: border-box;
   max-width: 100%;
-  overflow-x: hidden;
 }
 /*Phan mo dau trang*/
 header {
@@ -21,7 +27,7 @@ header {
 /*Phan ket thuc trang*/
 footer {
   background-color: rgb(77, 175, 255);
-  height: 4cm;
+  height: 151px;
   width: 100%;
 }
 /*Phan logo*/
