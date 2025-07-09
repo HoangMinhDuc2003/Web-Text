@@ -204,7 +204,7 @@ footer {
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
-    color: white;
+    color: rgb(255, 255, 255);
     z-index: 200; /* đảm bảo nằm trên */
   }
 
