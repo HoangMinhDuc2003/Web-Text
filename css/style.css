@@ -3,12 +3,11 @@
 }
 html,
 body {
-  height: 100%;
+  height: auto;
   margin: 0;
   padding: 0; /*Xóa khoảng trắng mặc định của web*/
   width: 100%;
   overflow-x: hidden;
-
 }
 
 body {
@@ -22,7 +21,7 @@ header {
   min-width: 100%;
   display: flex; /*Chia phần tử con theo hàng ngang*/
   justify-content: space-between; /*Khong xuong hàng khi kéo nhỏ*/
-  padding: 20px 20px; /*Tạo khoảng cách trên dưới phải trái*/
+  padding: 10px 10px; /*Tạo khoảng cách trên dưới phải trái*/
   position: relative; /*để các phần tử con (như nav-menu) có thể dùng absolute dựa theo vị trí của header.*/
 }
 
@@ -39,8 +38,8 @@ header {
   min-width: 220px; /*Giữ cho logo không nhỏ hơn 220px*/
 }
 .logo-icon {
-  width: 76px;
-  height: 76px;
+  width: 66px;
+  height: 66px;
   flex-shrink: 0; /*Không co lại khi thu nhỏ màn hình*/
 }
 
@@ -58,6 +57,7 @@ header {
   display: flex;
   align-items: center;
   gap: 20px;
+  padding-right: 10px;
 }
 .nav-list {
   list-style: none; /*Bỏ dấu chấm đầu dòng cho ul*/
@@ -136,7 +136,7 @@ footer {
 .contact {
   display: flex;
   justify-content: space-between;
-  padding: 0px;
+  padding: 20px;
   flex-wrap: wrap;
   gap: 20px;
 }
@@ -203,11 +203,23 @@ footer {
   background-color: #1976d2;
 }
 /*Phan media*/
-@media (max-width: 768px) {
+@media (max-width: 1244px) {
   .menu-toggle {
-    display: block;
-    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    color: rgb(0, 0, 0);
     z-index: 200; /* đảm bảo nằm trên */
+  }
+  .menu-toggle i {
+    font-size: 35px;
+    transition: color 0.3s ease;
+    padding: 10px;
+    height: 55px;
+    border-radius: 50%;
+  }
+  .menu-toggle i:hover {
+    background-color: #1976d2;
   }
 
   .nav-menu {
